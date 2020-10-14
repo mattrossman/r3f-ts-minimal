@@ -1,4 +1,17 @@
 import * as React from 'react'
 import { render } from 'react-dom'
+import { Canvas } from 'react-three-fiber'
 
-render(<h1>Hello world</h1>, document.getElementById('root'))
+
+function App() {
+	return (
+		<Canvas>
+			<mesh>
+				<boxBufferGeometry />
+				<meshNormalMaterial />
+			</mesh>
+		</Canvas>
+	)
+}
+
+render(<App />, document.getElementById('root'))
