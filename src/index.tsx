@@ -1,17 +1,6 @@
 import * as React from 'react'
 import { render } from 'react-dom'
-import { Canvas } from 'react-three-fiber'
-
-
-function App() {
-	return (
-		<Canvas>
-			<mesh>
-				<boxBufferGeometry />
-				<meshNormalMaterial />
-			</mesh>
-		</Canvas>
-	)
-}
+import './style.css'
+import App from './App'
 
 render(<App />, document.getElementById('root'))
